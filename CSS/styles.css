@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/* @import 'colors.css'; */
+
+:root {
+    --bg-primary: #f3fbff;
+    --bg-showcase: #dedede; 
+    --bg-services: #f7f7f7;
+    --bg-footer: #2baaec;
+    --bg-appointment: rgba(43,170,236,0.8);
+    --btn-primary: #25e6c8;
+    --img-showcase: #bfbfbf;
+    --btn-service-hover: #2baaec;
+    --primary: #2baaec;
+    --txt-primary: #363636;
+    --txt-secondary: #626262;
+    --topnavborder: #707070;
+    --social-primary: #2baaec;
+    --social-hover: #25e6c8;
+
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+head, body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+
+}
+
+.container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.top-nav {
+    border-bottom: 1px solid var(--topnavborder);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.top-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-nav .opening-hours i {
+    color: var(--social-primary);
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+.social-media a {
+    text-decoration: none;
+    color: var(--social-primary);
+    margin: 0 0.4rem;
+}
+.social-media a:hover {
+    color: var(--social-hover);
+}
+.main-nav-nav a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: columns;
+}
+#logo {
+    
+
+}
+
+
+
+
+
+
+
+        
+
+
+
