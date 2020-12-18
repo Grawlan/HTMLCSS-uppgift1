@@ -17,6 +17,7 @@
     --social-primary: #2baaec;
     --social-hover: #25e6c8;
     --txt-white: #fff;
+    --bg-footer: #2baaec
 
   }
 
@@ -48,6 +49,10 @@ a {
 
 .bg-gray {
     background-color: var(--bg-showcase);
+}
+
+.bg-footer {
+    background-color: var(--bg-footer);
 }
 
 .btn {
@@ -123,15 +128,58 @@ a {
 #showcase .container {
     display: flex;
     justify-content: space-between;
+    /* border: 1px solid black; */
 }
 
-.showcase-content {
-    align-self: center;
-}
 
 #placeholderImg {
-    height: 35rem;
+    height: 100%;
     width: auto;
+    margin-top: 1rem;
+    /* border: 1px solid black; */
+}
+/* .showcase .container {
+    height: 31.25rem;
+} */
+.showcase-content {
+    align-self: center;
+    padding: 0;
+}
+
+.showcase-content h1 {
+    color: var(--txt-primary);
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.showcase-content p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: var(--txt-secondary);
+}
+
+footer {
+    height: 4rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+footer .container {
+   
+   
+}
+.copyright {
+    color: var(--bg-primary);
+    width: 10rem;
+    align-self: center;
+}
+.footer i {
+    font-size: 1.2rem;
+    margin: 0 0.2rem
 }
 
 /* mediaqueries */
@@ -151,11 +199,32 @@ a {
     .main-nav-toggler {
         display: none;
     }
+    .showcase-content h1 {
+        font-size: 2rem;
+    }
+    .showcase-content p {
+        margin: 1.5rem 0;
+    }
+    .showcase-content {
+        padding: 3rem;
+    }
+    #placeholderImg {
+        height: 100%;
+    }
 }
 
 @media(min-width: 992px){
     .container{
         max-width: 960px;
+    }
+    .showcase-content h1 {
+        font-size: 3rem;
+    }
+    .showcase-content p {
+        margin: 2rem 0;
+    }
+    .showcase-content {
+        padding: 4rem;
     }
 }
 
@@ -163,6 +232,16 @@ a {
     .container{
         max-width: 1140px;
     }
+    .showcase-content h1 {
+        font-size: 4rem;
+    }
+    .showcase-content p {
+        margin: 3rem 0;
+    }
+    .showcase-content {
+        padding: 5rem;
+    }
+    
 }
 
 
