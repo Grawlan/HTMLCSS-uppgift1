@@ -6,7 +6,6 @@
     --bg-showcase: #dedede; 
     --bg-services-topnav: #f7f7f7;
     --bg-footer: #2baaec;
-    --bg-appointment: rgba(43,170,236,0.8);
     --btn-primary: #25e6c8;
     --img-showcase: #bfbfbf;
     --btn-service-hover: #2baaec;
@@ -17,7 +16,9 @@
     --social-primary: #2baaec;
     --social-hover: #25e6c8;
     --txt-white: #fff;
-    --bg-footer: #2baaec
+    --bg-footer: #2baaec;
+    --bg-appointment: #2baaec;
+    
 
   }
 
@@ -53,6 +54,14 @@ a {
 
 .bg-footer {
     background-color: var(--bg-footer);
+}
+
+.bg-appointment {
+    background-color: var(--bg-appointment);
+}
+
+.bg-overlay {
+    opacity: 0.84;
 }
 
 .btn {
@@ -157,6 +166,16 @@ a {
     font-size: 1rem;
     margin: 1rem 0;
     color: var(--txt-secondary);
+}
+
+#appointment {
+    height: 13.25rem;
+    width: 100%;
+    margin: auto;
+}
+#appointment .container {
+    height: 13.25rem;
+    border: 1px solid black;
 }
 
 footer {
