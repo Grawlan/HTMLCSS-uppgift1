@@ -62,7 +62,7 @@ a {
 }
 
 .bg-overlay {
-    opacity: 0.84;
+    opacity: 0.80;
 }
 
 .btn {
@@ -162,10 +162,12 @@ a {
 }
 
 
-#placeholderImg {
-    height: 100%;
+#showcaseImgDesktop {
+    height: 32rem;
     width: auto;
     margin-top: 1rem;
+    margin-left: -2rem;
+    display: none;
     /* border: 1px solid black; */
 }
 /* .showcase .container {
@@ -174,6 +176,7 @@ a {
 .showcase-content {
     align-self: center;
     padding: 0;
+    margin-left: 2rem;
 }
 
 .showcase-content h1 {
@@ -205,6 +208,7 @@ a {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 1.2rem;
     color: var(--txt-white);
+    text-align: center;
 }
 
 footer {
@@ -256,9 +260,13 @@ footer {
     .showcase-content {
         padding: 3rem;
     }
-    #placeholderImg {
-        height: 100%;
+    #showcaseImg {
+        display: none;
     }
+    #showcaseImgDesktop {
+        display: flex;
+    }
+   
     #appointment .container {
      flex-direction: row; 
      justify-content: space-between;
@@ -284,6 +292,10 @@ footer {
     .showcase-content {
         padding: 4rem;
     }
+    #showcaseImgDesktop {
+        height:  43.75rem;
+    }
+    
 }
 
 @media(min-width: 1200px){
