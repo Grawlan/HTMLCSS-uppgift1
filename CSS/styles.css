@@ -133,7 +133,7 @@ a {
 .main-nav-nav a {
     margin-left: 1rem;
     color: var(--txt-primary);
-    font-family: 'Roboto Slab' serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 1.3rem;
     padding: 0.5rem;
 }
