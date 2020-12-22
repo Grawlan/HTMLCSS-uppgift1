@@ -4,26 +4,22 @@
 :root {
     --bg-showcase: #dedede; 
     --bg-primary: #f7f7f7;
-     --btn-primary: #25e6c8;
     --img-showcase: #bfbfbf;
-    --btn-primary-hover: #2baaec;
     --primary: #2baaec;
+    --secondary: #25e6c8;
     --txt-primary: #363636;
     --txt-secondary: #626262;
     --topnavborder: #707070;
-    --social-primary: #2baaec;
-    --social-hover: #25e6c8;
     --txt-white: #fff;
-    --bg-appointment: #2baaec;
     --btn-appointment: #ffffff;
     --btn-appointment-border-hover: #ffffff;
-    --bg-footer: #2baaec;
     --footer-border: #ffffff;
     --txt-copyright: #f3fbff;
 
   }
 
-* {
+/* Defaults */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,8 +37,9 @@ head, body {
 a {
     text-decoration: none;
 }
+/* Defaults End */
 
-/* help classes */
+/* Help classes */
 .container {
     width: 100%;
     padding: 0 1rem;
@@ -58,7 +55,7 @@ a {
 }
 
 .bg-appointment {
-    background-color: var(--bg-appointment);
+    background-color: var(--primary);
 }
 
 .bg-overlay {
@@ -76,73 +73,65 @@ a {
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: bold;
+    outline: none;
 }
 
 .btn-primary {
-    background-color: var(--btn-primary) ;
+    background-color: var(--secondary) ;
     color: var(--txt-white);
     
 }
 .btn-primary:hover {
-    background-color: var(--btn-primary-hover);
-}
-
-.btn-appointment {
-    margin-top: 2rem;
-    background-color: var(--btn-appointment);
-    color: var(--primary);
-    
-
-}
-
-.btn-appointment:hover {
     background-color: var(--primary);
-    color: var(--txt-white);
-    border-color: var(--btn-appointment-border-hover)
-
+    transition: all 0.2s linear;
 }
 
-/* top nav */
+/* Help classes End */
+
+/* Top-nav Start */
 .top-nav-collapse{
     display: none;
 }
 
-.main-nav-collapse {
-    display: none;
-}
 .top-nav {
     border-bottom: 1px solid var(--topnavborder);
     padding: 0.5rem;
     margin-bottom: 1rem;
-    
+        
 }
-.top-nav .container, .main-nav .container {
+.top-nav .container, .main-nav .container, #aboutus .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .top-nav .opening-hours i {
-    color: var(--social-primary);
+    color: var(--primary);
     font-size: 1.2rem;
     margin-right: 0.5rem;
 }
 .social-media a {
     text-decoration: none;
-    color: var(--social-primary);
+    color: var(--primary);
     margin: 0 0.4rem;
     font-size: 1.2rem;
 }
 .social-media a:hover {
-    color: var(--social-hover);
+    color: var(--secondary);
+    transition: all 0.2s linear;
 }
+/* Top-nav End */
 
-/* main nav */
+/* Main-nav Start */
+
+.main-nav-collapse {
+    display: none;
+}
 .main-nav-nav {
     display: flex;
     flex-direction: column;
 }
 .main-nav-nav a {
-    margin: 0 1rem;
+    margin-left: 1rem;
     color: var(--txt-primary);
     font-family: 'Roboto Slab' serif;
     font-size: 1.3rem;
@@ -154,25 +143,26 @@ a {
     background-color: transparent;
     border: 1px solid transparent;
 }
+/* Main-nav End */
 
+/* Showcase Start  */
 #showcase .container {
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid black; */
+  
 }
 
-
+#showcaseImg {
+    height: 20rem;
+}
 #showcaseImgDesktop {
     height: 32rem;
     width: auto;
     margin-top: 1rem;
     margin-left: -2rem;
     display: none;
-    /* border: 1px solid black; */
+   
 }
-/* .showcase .container {
-    height: 31.25rem;
-} */
 .showcase-content {
     align-self: center;
     padding: 0;
@@ -191,7 +181,52 @@ a {
     margin: 1rem 0;
     color: var(--txt-secondary);
 }
+/* Showcase End */
 
+/* About us Start */
+
+
+#aboutus .container {
+    gap: 3rem;
+}
+.aboutus-info {
+    width: 100%;
+    text-align: center;
+}
+#aboutus {
+    margin-top: 4rem;
+}
+#aboutus-top h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 1.2;
+    border-bottom: 4px solid var(--secondary);
+}
+#aboutus-top span {
+    color: var(--primary);
+}
+#aboutus-top p {
+    margin: 1.5rem 0; 
+    font-size: 0.9rem;
+}
+#aboutus-infotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#aboutus-infotext h3 {
+    color: var(--primary);
+    text-align: center;
+   
+}
+#aboutusImgDesktop {
+    display: none;
+}
+
+/* Appointment Start */
 #appointment {
     width: 100%;
     margin: auto;
@@ -211,6 +246,24 @@ a {
     text-align: center;
 }
 
+.btn-appointment {
+    margin-top: 2rem;
+    background-color: var(--btn-appointment);
+    color: var(--primary);
+    
+
+}
+
+.btn-appointment:hover {
+    background-color: var(--primary);
+    color: var(--txt-white);
+    border-color: var(--btn-appointment-border-hover);
+    transition: all 0.2s linear;
+
+}
+/* Appointment End */
+
+/* Footer Start */
 footer {
     height: 4rem;
     width: 100%;
@@ -233,8 +286,9 @@ footer {
     font-size: 1.2rem;
     margin: 0 0.2rem
 }
+/* Footer End */
 
-/* mediaqueries */
+/* Mediaqueries */
 @media(min-width: 768px){
     .container {
         max-width: 720px;
@@ -264,8 +318,26 @@ footer {
         display: none;
     }
     #showcaseImgDesktop {
+        height: 28rem;
         display: flex;
     }
+    #aboutus-infotext {
+        flex-direction: row;
+        justify-content: space-between;
+               
+    }
+    #aboutus-infotext h3 {
+        text-align: left;
+       
+    }
+    #aboutusImgDesktop {
+       display: flex;
+    }
+    .aboutus-info {
+        width: 50%;
+        text-align: left;
+    }
+
    
     #appointment .container {
      flex-direction: row; 
@@ -293,7 +365,10 @@ footer {
         padding: 4rem;
     }
     #showcaseImgDesktop {
-        height:  43.75rem;
+        height:  42rem;
+    }
+    #aboutusImgDesktop {
+        height: auto;
     }
     
 }
