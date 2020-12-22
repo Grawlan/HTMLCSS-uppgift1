@@ -320,7 +320,7 @@ footer {
    
     .showcase-content {
         
-        align-items: center;
+        align-items: flex-start;
         padding: 0;
         margin-left: 2rem;
         margin-top: 1rem;
