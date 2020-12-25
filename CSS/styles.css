@@ -192,11 +192,12 @@ a {
 
 
 #aboutus .container {
-    gap: 3rem;
+    gap: 1rem;
 }
 .aboutus-info {
     width: 100%;
     text-align: center;
+    margin-top: 6rem;
 }
 #aboutus {
     margin-top: 4rem;
@@ -206,6 +207,7 @@ a {
     font-size: 1.9rem;
     font-weight: 400;
     line-height: 1.2;
+    padding-bottom: 2rem;
     border-bottom: 4px solid var(--secondary);
 }
 #aboutus-top span {
@@ -213,7 +215,7 @@ a {
 }
 #aboutus-top p {
     margin: 1.5rem 0; 
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 #aboutus-infotext {
     display: flex;
@@ -223,13 +225,18 @@ a {
 }
 
 #aboutus-infotext h3 {
+    margin-top: 1rem;
     color: var(--primary);
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
    
 }
 #aboutusImgDesktop {
     display: none;
 }
+
+/* About us End */
 
 /* Appointment Start */
 #appointment {
@@ -340,14 +347,26 @@ footer {
     }
     #aboutus-infotext h3 {
         text-align: left;
+        margin-top: 2rem;
+       
        
     }
     #aboutusImgDesktop {
        display: flex;
     }
     .aboutus-info {
-        width: 50%;
+        width: 60%;
         text-align: left;
+    }
+    #aboutus-top p {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+    }
+    #aboutus .container {
+        align-items: flex-start;
+    }
+    .aboutus-top h1 {
+        font-size: 2.5rem;
     }
 
    
@@ -380,7 +399,13 @@ footer {
     #aboutusImgDesktop {
         height: auto;
     }
-    
+   
+    #aboutus-infotext h3 {
+        font-size: 2.5rem;
+    }
+    #aboutus .container {
+        gap: 3rem;
+    }
 }
 
 @media(min-width: 1200px){
@@ -393,6 +418,8 @@ footer {
     .showcase-content p {
         margin: 3rem 0;
     }
-   
+    #aboutus-infotext {
+        width: 80%;
+    } 
     
 }
