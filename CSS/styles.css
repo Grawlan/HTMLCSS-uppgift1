@@ -248,36 +248,32 @@ a {
     background-color: var(--bg-services);
 }
 
-#services .card img {
+#services .container .card img {
     background-color: var(--secondary);
     height: 6.75rem;
     width: 6.75rem;
     padding: 1rem;
     background-size: 7.5rem 7.5rem;
     border-radius: 50%;
-    margin-top: 2rem;
+    
 }
 #services .container .cards {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-   
-
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #services .container .card {
     border: 1px solid black;
     background-color: var(--bg-primary);
     height: 27.25rem;
-    width: 28.125rem;
-    margin: 0;
+    width: 80%;
+    margin: 2rem 0;
     border-radius: 0.625rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    /* padding: 0 3rem; */
+    padding: 6rem 3rem;
     
   
     
@@ -419,8 +415,16 @@ footer {
     .aboutus-top h1 {
         font-size: 2.5rem;
     }
+    #services .container .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #services .container .card {
+        width: 47%;
+    }
 
-   
     #appointment .container {
      flex-direction: row; 
      justify-content: space-between;
@@ -465,10 +469,9 @@ footer {
         flex-direction: row;
         text-align: left;
     }
-    #services .container .cards {
-        grid-template-columns: repeat(2, 1fr);
-    
-}
+    #services .container .card {
+        width: 30%;
+    }
 
 @media(min-width: 1200px){
     .container{
