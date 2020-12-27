@@ -246,6 +246,7 @@ a {
 #services {
     width: 100%;
     background-color: var(--bg-services);
+    padding-bottom: 7rem;
 }
 #services .container .centerflex {
     display: flex;
